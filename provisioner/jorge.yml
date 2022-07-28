@@ -1,0 +1,2 @@
+- name: cat /etc/hosts
+  ansible.builtin.shell: cat /etc/hosts >> somelog.txt
