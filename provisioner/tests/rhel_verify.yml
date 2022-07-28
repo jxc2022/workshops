@@ -27,4 +27,7 @@
           delay: 3
           retries: 60
 
+        - name: cat /etc/hosts
+          ansible.builtin.shell: cat /etc/hosts >> somelog.txt
+      
       when: '"ansible-1" in inventory_hostname'
